@@ -197,6 +197,7 @@ input[type="submit"]:hover {
     border-width: 2px;
     border-style: solid;
     padding: 5%;
+    height: 250px;
 }
 
 .home-card img{
@@ -237,6 +238,10 @@ input[type="submit"]:hover {
     .gallery-column {
       flex: 100%;
       max-width: 100%;
+    }
+
+    .home-card{
+        height: auto;
     }
   }
 
