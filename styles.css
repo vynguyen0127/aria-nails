@@ -187,8 +187,8 @@ input[type="submit"]:hover {
 
 /* Home Card */
 .home-boxes {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .home-card {
     margin-top: 20px;
@@ -205,6 +205,14 @@ input[type="submit"]:hover {
     height: auto;
 }
 
+.menu-preview {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.menu-preview-item {
+    margin-top: 10%;
+}
 /* Gallery */
 .gallery-row {
     display: flex;
@@ -242,6 +250,7 @@ input[type="submit"]:hover {
 
     .home-card{
         height: auto;
+        width: 100%;
     }
   }
 
