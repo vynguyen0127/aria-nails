@@ -42,13 +42,19 @@ body {
     /* background-color: black; */
 }
 /* Services styles */
+.accordion-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
 .services {
     max-width: 800px;
     margin: 20px auto;
 }
 
 .service {
-    background: url('src/marble.jpeg') center/cover no-repeat;
+    background-image: url('src/marble.jpeg');
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -205,6 +211,10 @@ input[type="submit"]:hover {
     height: auto;
 }
 
+#experience {
+    position: 0;
+    width: 100%;
+}
 .menu-preview {
     margin-top: 10%;
     margin-bottom: 10%;
