@@ -59,6 +59,7 @@ body {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .service h2 {
@@ -77,6 +78,23 @@ body {
 
 .service-description {
     color: #666;
+    border-radius: 50px;
+}
+
+.service-img-left {
+    margin-right: 5%;
+    border-radius: 5px;
+}
+
+.service-img-right {
+    margin-left: 5%;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
@@ -85,6 +103,15 @@ body {
     padding: 0;
 }
 
+@media (max-width: 991.98px) { 
+    .service-img-left {
+        visibility: hidden;
+    }
+
+    .service-img-right{
+        visibility: hidden;
+    }
+ }
 @media only screen and (max-width: 600px) {
     .nav-logo {
         width: 160px;
