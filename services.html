@@ -28,11 +28,11 @@
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   Manicures
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse show" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <div class="service" id="manicures">
                       <div class="box">
@@ -222,7 +222,21 @@
         </div>
       </div>
   </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+      // JavaScript to open specific accordion item based on URL hash
+      $(document).ready(function() {
+        console.log("on document ready")
+        // Get the hash value from the URL
+        var hash = window.location.hash;
+        // Check if the hash corresponds to an accordion item
+        if ($(hash).hasClass('accordion-collapse')) {
+          // Open the accordion item corresponding to the hash
+          $(hash).collapse('show');
+        }
+      });
+    </script>
 </body>
 <script id="replace_with_footer" src="scripts/footer.js"></script>
 </html>
