@@ -49,7 +49,7 @@ nav {
 .appt-btn {
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 15px;
 }
 
 .appt-btn button{
@@ -58,6 +58,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+    padding-bottom: 10px;
 }
 
 body {
@@ -264,10 +265,7 @@ input[type="submit"]:hover {
     position: 0;
     width: 100%;
 }
-.menu-preview {
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
+
 
 .menu-preview-item {
     margin-top: 10%;
