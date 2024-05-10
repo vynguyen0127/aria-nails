@@ -1,10 +1,14 @@
 .carousel-home {
-    width: 80%;
+    width: 50%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
+.carousel-item img {
+    width: 200px;
+    height: auto;
+}
 section {
     text-align: center;
 }
@@ -36,6 +40,24 @@ nav {
     background-color: #846969;
     padding: 4px;
     border-radius: 5px;
+}
+
+.temp {
+    background-color: #846969;
+}
+
+.appt-btn {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.appt-btn button{
+    font-size: large;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 
 body {
@@ -320,4 +342,15 @@ input[type="submit"]:hover {
   
   .footer-subcontent{
     color: white;
+  }
+
+  @media (max-width: 992px) {
+    .appt-btn {
+        width: 100%;
+        margin-top:4%;
+    }
+
+    .appt-btn button {
+        width: 80%;
+    }
   }
