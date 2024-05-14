@@ -143,103 +143,56 @@ body {
 }
 
 /* Contact section styles */
-.contact {
+.container {
     display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-.contact-info {
-    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 20px;
-    box-sizing: border-box;
-}
+  }
 
-.contact-form {
-    flex: 1;
+  .contact-info,
+  .contact-form {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .map-container {
+    height: 300px;
+    width: 100%;
+  }
+
+  form {
     padding: 20px;
-    box-sizing: border-box;
-    background-color: #f5f5f5;
-}
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
 
-/* Map styles */
-.map {
-    margin-bottom: 20px;
-}
-
-/* Address, Phone, and Social Media styles */
-.address,
-.phone,
-.social-media {
-    margin-bottom: 20px;
-}
-
-/* Social Media Links styles */
-.social-media ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social-media ul li {
-    margin-bottom: 5px;
-}
-
-.social-media ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.social-media ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Form styles */
-.contact-form h2 {
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-}
-
-input,
-textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-}
-
-input[type="submit"] {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
+  input,
+  textarea {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     cursor: pointer;
-}
+  }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
+  @media only screen and (max-width: 768px) {
+    .contact-info,
+    .contact-form {
+      width: 100%;
+    }
 
-.gc-image {
-    max-width: 70%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.img-2 {
-    width: 75%;
-    height: auto;
-    border-radius: 10px;
-    cursor: pointer;
-}
+    .carousel-home {
+        width: 90%
+    }
+  }
 
 /* Home Card */
 .home-boxes {
@@ -313,7 +266,7 @@ input[type="submit"]:hover {
 
   /* Footer */
   footer {
-    background-image: linear-gradient(black, black);
+    background-image: linear-gradient(#846969, #846969);
     padding: 10px;
     text-align: center;
 }
