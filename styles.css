@@ -91,8 +91,8 @@ body {
 }
 /* Services styles */
 .accordion-container {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 10%;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -137,15 +137,18 @@ body {
 .service-name {
     font-weight: bold;
     margin: 0;
+    font-size: large;
 }
 
 .service-price {
     margin: 5px 0;
+    font-size: medium;
 }
 
 .service-description {
     color: #666;
     border-radius: 50px;
+    font-size: medium;
 }
 
 .service-img-left {
@@ -172,11 +175,11 @@ body {
 
 @media (max-width: 991.98px) { 
     .service-img-left {
-        visibility: hidden;
+        display: none
     }
 
     .service-img-right{
-        visibility: hidden;
+        display: none
     }
  }
 @media only screen and (max-width: 600px) {
@@ -403,7 +406,7 @@ body {
         text-align: start;
         margin: auto;
         width: 15%;
-        margin-bottom: 2%;
+        margin-bottom: 5px;
     }
 
     .footer-row p {
