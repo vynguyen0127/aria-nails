@@ -112,7 +112,7 @@ body {
     background: -webkit-linear-gradient(#ca9f00,#ca9f00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: large;
+    font-size: larger;
 }
 
 .services {
