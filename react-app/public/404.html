@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aria Nail Spa | Chicago, IL</title>
+    <script type="text/javascript">
+      // GitHub Pages SPA fallback: redirect any unknown path back to "/"
+      // with the original path encoded in the query string, so React
+      // Router can restore it once index.html loads.
+      var l = window.location;
+      l.replace(
+        l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") + "/?/" +
+        l.pathname.slice(1).replace(/&/g, "~and~") +
+        (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

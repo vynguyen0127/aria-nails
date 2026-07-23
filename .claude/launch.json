@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "aria-react-app",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "react-app", "run", "dev"],
+      "port": 5173
+    },
+    {
+      "name": "aria-react-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "react-app", "run", "preview", "--", "--port", "4173"],
+      "port": 4173
+    }
+  ]
+}
