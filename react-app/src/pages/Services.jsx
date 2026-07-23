@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { serviceCategories } from "../data/services";
+import { useServiceCategories } from "../data/useServiceCategories";
 import "./Services.css";
 
 export default function Services() {
   const location = useLocation();
+  const serviceCategories = useServiceCategories();
   const [openId, setOpenId] = useState(serviceCategories[0].id);
   const sectionRefs = useRef({});
 
